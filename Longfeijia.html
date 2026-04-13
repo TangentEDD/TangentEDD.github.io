@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jia Longfei - Data & AI Portfolio</title>
+<style>
+  body {
+    margin: 0;
+    padding-top: 60px; /* 给正文留出空间，避免导航栏挡住内容 */
+    font-family: Arial, sans-serif;
+  }
+
+  nav {
+    background: #333;
+    padding: 10px;
+    position: fixed;   /* 固定在页面顶部 */
+    top: 0;            /* 距离顶部 0 */
+    width: 100%;       /* 占满宽度 */
+    z-index: 1000;     /* 保证在最上层 */
+  }
+
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: underline; /* 鼠标悬停效果 */
+  }
+
+  section {
+    padding: 40px;
+  }
+
+  .project-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- Navigation -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About Me</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+  <!-- Home -->
+  <section id="home">
+    <h1>Jia Longfei</h1>
+    <p>Tags: Python | PySpark | Machine Learning | Computer Vision | SQL</p>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a Master of Data Science student at Lingnan University (expected to graduate in July 2026) with a Bachelor’s in Data Science and Big Data Technology from University of Jinan. This academic journey — undergraduate training in mathematics and computing, followed by advanced graduate study in machine learning and big data — has given me a strong foundation in both theory and practice.</p>
+<p>
+My undergraduate studies equipped me with solid programming skills (Python, Java, C), database principles, and data visualization techniques, while my master’s program focuses on scalable systems, machine learning, and computer vision. I excel at bridging rigorous mathematical thinking with practical data applications — whether designing pipelines for large-scale data processing, applying reinforcement learning to dynamic environments, or communicating complex findings in clear academic reports.
+</p>
+<p>
+
+This combination of backgrounds taught me how to debug complex systems under constraints, analyze data with precision, and deliver robust, reproducible solutions. Now I apply the same rigor to data-driven projects: from cleaning and mining raw datasets to deploying machine learning models that generate real impact.</p>
+    <ul>
+      <li>Advanced machine learning & computer vision</li>
+      <li>Hands-on with PySpark & distributed systems</li>
+      <li>Strong academic communication & group collaboration</li>
+    </ul>
+  </section>
+<!-- Education -->
+<section id="education">
+  <h2>Education</h2>
+  <p><strong>University of Jinan, School of Mathematical Sciences</strong></p>
+  <p>Bachelor of Science in Data Science and Big Data Technology (Sep 2021 – Jul 2025)</p>
+  <p><strong>Lingnan University, School of Mathematical Sciences</strong></p>
+  <p>Master of Science in Data Science(Sep 2025 – Jul 2026, expected)</p>
+
+</section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Technical</h3>
+    <p>Python, SQL, PySpark, Neural Networks, Computer Vision, Reinforcement Learning</p>
+    <h3>Business</h3>
+    <p>Problem framing, KPI evaluation (SMART, 5Vs), Reporting & storytelling</p>
+    <h3>Tools</h3>
+    <p>pandas, scikit-learn, YOLO26x, Power BI/Tableau, LaTeX</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+<div class="project-card">
+  <h3>Job Seeking Website Crawlers and Data Analysis (2025)</h3>
+  <p><strong>Problem:</strong> Collect and analyze recruitment data to understand salary distributions and experience requirements, supporting job market insights.</p>
+  <p><strong>Data:</strong> Thousands of job postings from a job seeking website, including fields such as position, region, salary, company, benefits, and experience requirements.</p>
+  <p><strong>Approach:</strong> <p>
+    - Used Selenium crawler with hidden webdriver attributes and CSS Selector parsing, plus wait mechanisms to avoid IP bans.<br>
+    - Cleaned data with Pandas and regex: handled missing values, standardized salary structures, normalized experience requirements, and mapped regions to provincial level.<br>
+    - Visualized results with Pyecharts: heatmap for salary distribution by region, pie chart for experience distribution.
+  </p>
+  <p><strong>Outcome:</strong> Produced clean CSV datasets and visualizations showing salary averages by province and proportions of experience requirements. Delivered actionable insights into regional salary trends and hiring expectations.</p>
+  <p><strong>Contribution:</strong> Independently implemented the crawler, data cleaning pipeline, and visualization outputs.</p>
+</div>
+
+    <div class="project-card">
+      <h3>Moving Object Detection Pipeline (2026)</h3>
+      <p><strong>Problem:</strong> Robust detection in video streams for surveillance context</p>
+      <p><strong>Data:</strong> Custom video dataset, ~10GB, frame-level annotations</p>
+      <p><strong>Approach:</strong> Sliding-window median background subtraction, gamma correction, CLAHE, YOLO26x</p>
+      <p><strong>Outcome:</strong> Achieved 92% detection accuracy, reproducible modular pipeline</p>
+      <p><strong>Contribution:</strong> Designed preprocessing pipeline, integrated YOLO26x, wrote report sections</p>
+    </div>
+    <div class="project-card">
+      <h3>Big Data Case Study – Microsoft KPI Evaluation (2026)</h3>
+      <p><strong>Problem:</strong> Evaluating fairness and efficiency of big data workflows</p>
+      <p><strong>Data:</strong> Simulated enterprise datasets, structured logs</p>
+      <p><strong>Approach:</strong> SMART KPI framework + 5Vs analysis</p>
+      <p><strong>Outcome:</strong> Clear evaluation framework, group presentation slides</p>
+      <p><strong>Contribution:</strong> Structured case study analysis, drafted presentation narrative</p>
+    </div>
+ <div class="project-card">
+      <h3>Machine Learning-Based Home Purchase Behavior Prediction (2026)</h3>
+      <p><strong>Problem:</strong> Predict potential homebuyers for a real estate platform to improve marketing ROI, addressing data imbalance and multicollinearity.</p>
+      <p><strong>Data:</strong>200,000 global property transaction records with 25 features (income, crime rate, property age, etc.).</p>
+      <p><strong>Approach:</strong> Data preprocessing (IQR capping, log transform, feature engineering: EMI/income ratio, price per sqft). Built 9 models: MLP, Random Forest, LightGBM, XGBoost, etc. Grid search + 10-fold CV.</p>
+      <p><strong>Outcome:</strong>MLP achieved AUC 0.95, Recall 99.4%, F1 0.854. EMI/income ratio (67%) and crime rate were top factors. Business value: Enables precise targeting of high-intent buyers, reducing wasted ad spend and improving marketing efficiency. Provides data foundation for personalized loan product recommendations.</p>
+      <p><strong>Contribution:</strong>Co-programmer: implemented Random Forest, LightGBM, and XGBoost models; tuned hyperparameters; contributed to GitHub documentation.</p>
+    </div>
+<div class="project-card">
+  <h3>Reinforcement Learning Platformer Game (2026)</h3>
+  <p><strong>Problem:</strong> Build a custom 2D platform environment to test reinforcement learning agents and demonstrate game physics integration.</p>
+  <p><strong>State Space:</strong> 4 dimensions (player position x/y, velocity vx/vy).</p>
+  <p><strong>Actions:</strong> 3 discrete actions (move left, move right, jump).</p>
+  <p><strong>Approach:</strong> Implemented environment in Python using Pygame. Designed reward function with checkpoint bonuses, landing rewards, and penalties for stagnation or falling. Tested Q-learning and DQN agents on the environment.</p>
+  <p><strong>Outcome:</strong> Agents learned basic jumping strategies and achieved stable average scores. The environment provided a reproducible testbed for RL algorithms and demonstrated how reward shaping influences agent behavior.</p>
+  <p><strong>Contribution:</strong> Built the environment class, coded physics and reward logic, implemented rendering and play mode, and ran experiments with different RL algorithms. <a href="https://github.com/TangentEDD/PlatformerGame" target="_blank">Code available on GitHub</a>.</p>
+</div>
+
+  </section>
+
+  <!-- Resume -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a href="https://drive.usercontent.google.com/download?id=1K_XwV6x-dUKkLNv7-ez0Ab635HcVSA8B&export=download&authuser=0&confirm=t&uuid=e0ba1407-55a7-419f-83ab-b012cdc9d6be&at=ALBwUglED_MM2Z_-X0dGimy4mBzN:1776090383235" target="_blank">Download my Resume (EN)</a></p>
+<p><a href="https://drive.usercontent.google.com/download?id=1xgVEMagB68GoKtB_IKfLTYvQdg7d4QFW&export=download&authuser=0&confirm=t&uuid=723a8681-3c6c-40c0-b64a-771a83fe7842&at=ALBwUgmi8mUEADicpBhVeqxsL1a4:1776090458223" target="_blank">Download my Resume (CN)</a></p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: 1796804160@qq.com</p>
+</body>
+</html>
